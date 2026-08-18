@@ -275,8 +275,8 @@
 /* Main product */
 
 .hero-image-main {
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    left: 110px;
 
     width: 350px;
     height: 350px;
