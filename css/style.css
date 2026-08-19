@@ -738,3 +738,69 @@
 
     font-size: 13px;
 }
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.login-btn {
+    border: 1px solid #2929d8;
+    color: #2929d8;
+    background: transparent;
+}
+
+.login-btn:hover {
+    background-color: #2929d8;
+    color: #ffffff;
+}
+
+.signup-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    padding: 0 18px;
+
+    border: 1px solid #2929d8;
+    border-radius: 8px;
+
+    background-color: #2929d8;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.nav-actions .signup-btn {
+    color: #ffffff;
+    background-color: #2929d8;
+}
+
+.nav-actions .login-btn {
+    color: #2929d8;
+    background-color: transparent;
+}
