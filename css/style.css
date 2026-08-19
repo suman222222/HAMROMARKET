@@ -627,6 +627,103 @@
 }
 
 /* =========================
+   Team Section
+   ========================= */
+
+.team-section {
+    padding: 80px 0;
+
+    background-color: #f8f8fb;
+}
+
+.team-heading {
+    margin-bottom: 36px;
+}
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.team-card {
+    padding: 28px 22px;
+
+    border: 1px solid #e5e4e9;
+    border-radius: 18px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(15, 16, 32, 0.08);
+}
+
+.member-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 20px;
+
+    background-color: #eeeeff;
+    color: #2929d8;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.member-info h3 {
+    margin: 0;
+
+    color: #0f1020;
+
+    font-size: 18px;
+}
+
+.member-role {
+    margin: 7px 0 18px;
+
+    color: #68708a;
+
+    font-size: 14px;
+}
+
+.member-branch {
+    display: inline-block;
+
+    max-width: 100%;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    background-color: #f1f0f7;
+    color: #2929d8;
+
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: 600;
+
+    overflow-wrap: anywhere;
+}
+
+/* =========================
    Footer
    ========================= */
 
