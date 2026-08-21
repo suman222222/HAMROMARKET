@@ -1148,3 +1148,11 @@
         padding: 16px;
     }
 }
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ff573f;
+    outline-offset: 3px;
+}
+
+
