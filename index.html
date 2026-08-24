@@ -1,11 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HamroMarket</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HamroMarket | Your Local Digital Bazaar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
+    <header class="site-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-hamro">Hamro</span><span class="logo-market">Market</span>
+        </a>
+
+        <div class="search-container">
+            <label for="product-search" class="visually-hidden">
+                Search products
+            </label>
+
+            <input
+                type="search"
+                id="product-search"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#team">Team</a>
+            <a href="contact.html">About</a>
+            <div class="nav-actions">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+            <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                🛒
+            
+            </a>
+        </nav>
+
+    </div>
+</header>
+
     
+
+    <main>
+        <section class="hero">
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                &lt;/&gt; VCS SUMMER CLASS PROJECT
+            </span>
+
+            <h1>
+                Your Local
+                <span>Digital</span>
+                Bazaar
+            </h1>
+
+            <p class="hero-description">
+                HamroMarket is a collaborative student project built by
+                4 developers using Git &amp; GitHub to simulate a
+                real-world e-commerce marketplace.
+            </p>
+
+            <div class="hero-actions">
+                <a href="products.html" class="btn btn-primary">
+                    Browse Products <span>→</span>
+                </a>
+
+                <a
+                    href="https://github.com/suman222222/HAMROMARKET"
+                    class="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on GitHub
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual" aria-label="Featured products">
+
+            <div class="hero-image hero-image-main">
+                <img
+                    src="images/heroproducts/headphone.webp"
+                    alt="Premium wireless headphones"
+                    width="360"
+                    height="360"
+                >
+            </div>
+
+            <div class="hero-image hero-image-shoe">
+                <img
+                    src="images/heroproducts/shoes.webp"
+                    alt="Red running shoes"
+                    width="250"
+                    height="250"
+                >
+            </div>
+
+            <div class="hero-image hero-image-bag">
+                <img
+                    src="images/heroproducts/bagpack.webp"
+                    alt="Backpack for travel"
+                    width="190"
+                    height="190"
+                >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+        <section class="categories" aria-labelledby="category-heading">
+    <div class="section-container">
+
+        <h2 id="category-heading">Shop by Category</h2>
+
+        <div class="category-list" role="list">
+
+            <a href="products.html" class="category-item active" role="listitem">
+                <span aria-hidden="true">🛍️</span>
+                <span>All</span>
+            </a>
+
+            <a href="products.html?category=electronics"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">⚡</span>
+                <span>Electronics</span>
+            </a>
+
+            <a href="products.html?category=fashion"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">👗</span>
+                <span>Fashion</span>
+            </a>
+
+            <a href="products.html?category=food"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">🍃</span>
+                <span>Food</span>
+            </a>
+
+            <a href="products.html?category=home"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">🏠</span>
+                <span>Home &amp; Living</span>
+            </a>
+
+            <a href="products.html?category=footwear"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">👟</span>
+                <span>Footwear</span>
+            </a>
+
+            <a href="products.html?category=accessories"
+               class="category-item"
+               role="listitem">
+                <span aria-hidden="true">👜</span>
+                <span>Accessories</span>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+        <section class="featured-products" aria-labelledby="products-heading">
+    <div class="section-container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">OUR COLLECTION</span>
+                <h2 id="products-heading">Featured Products</h2>
+                <p>Explore some of our popular local products.</p>
+            </div>
+
+            <a href="products.html" class="view-all-link">
+                View All Products →
+            </a>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+
+                <a href="products.html" class="product-image">
+                    <img
+                        src="images/products/wireless headphone.webp"
+                        width="400"
+                        height="400"
+                        loading="lazy"
+                        alt="Wireless headphones"
+                    >
+                </a>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>
+                        <a href="products.html">
+                            Wireless Headphones
+                        </a>
+                    </h3>
+
+                    <div class="product-bottom">
+                        <span class="product-price">
+                            Rs. 4,999
+                        </span>
+
+                        <button
+                            type="button"
+                            class="add-cart-btn"
+                            aria-label="Add Wireless Headphones to cart"
+                        >
+                            +
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+            <article class="product-card">
+
+                <a href="products.html" class="product-image">
+                    <img
+                        src="images/products/blue shirt.webp"
+                        width="400"
+                        height="400"
+                        loading="lazy"
+                        alt="Blue casual shirt"
+                    >
+                </a>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h3>
+                        <a href="products.html">
+                            Classic Blue Shirt
+                        </a>
+                    </h3>
+
+                    <div class="product-bottom">
+                        <span class="product-price">
+                            Rs. 1,999
+                        </span>
+
+                        <button
+                            type="button"
+                            class="add-cart-btn"
+                            aria-label="Add Classic Blue Shirt to cart"
+                        >
+                            +
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+            <article class="product-card">
+
+                <a href="products.html" class="product-image">
+                    <img
+                        src="images/heroproducts/shoes.webp"
+                        width="400"
+                        height="400"
+                        loading="lazy"
+                        alt="Red running shoes"
+                    >
+                </a>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Footwear
+                    </span>
+
+                    <h3>
+                        <a href="products.html">
+                            Running Shoes
+                        </a>
+                    </h3>
+
+                    <div class="product-bottom">
+                        <span class="product-price">
+                            Rs. 3,499
+                        </span>
+
+                        <button
+                            type="button"
+                            class="add-cart-btn"
+                            aria-label="Add Running Shoes to cart"
+                        >
+                            +
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+            <article class="product-card">
+
+                <a href="products.html" class="product-image">
+                    <img
+                        src="images/heroproducts/bagpack.webp"
+                        width="400"
+                        height="400"
+                        loading="lazy"
+                        alt="Local leather backpack"
+                    >
+                </a>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Accessories
+                    </span>
+
+                    <h3>
+                        <a href="products.html">
+                            Local Leather Backpack
+                        </a>
+                    </h3>
+
+                    <div class="product-bottom">
+                        <span class="product-price">
+                            Rs. 2,499
+                        </span>
+
+                        <button
+                            type="button"
+                            class="add-cart-btn"
+                            aria-label="Add Local Leather Backpack to cart"
+                        >
+                            +
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+        <!-- Team Section -->
+         <section class="team-section" aria-labelledby="team-heading">
+            <div class="section-container">
+                <div class="section-heading team-heading">
+                    <div>
+                <span class="section-label">OUR TEAM</span>
+                <h2 id="team-heading">Built Together</h2>
+                <p>
+                    Four students collaborating through Git and GitHub.
+                </p>
+            </div>
+
+            <a href="about.html" class="view-all-link">
+                Meet the Team →
+            </a>
+        </div>
+
+        <div class="team-grid">
+
+            <!-- Suman -->
+            <article class="team-card">
+                <div class="member-avatar">
+                    SK
+                </div>
+
+                <div class="member-info">
+                    <h3>Suman Kapri</h3>
+                    <p class="member-role">Full Stack Developer</p>
+
+                    <span class="member-branch">
+                        feature/home
+                    </span>
+                </div>
+            </article>
+
+
+            <!-- Aabhas -->
+            <article class="team-card">
+                <div class="member-avatar">
+                    AS
+                </div>
+
+                <div class="member-info">
+                    <h3>Aabhas Shakya</h3>
+                    <p class="member-role">UI/UX Designer</p>
+
+                    <span class="member-branch">
+                        feature/products
+                    </span>
+                </div>
+            </article>
+
+
+            <!-- Shine -->
+            <article class="team-card">
+                <div class="member-avatar">
+                    SB
+                </div>
+
+                <div class="member-info">
+                    <h3>Shine Bhatta</h3>
+                    <p class="member-role">Frontend Developer</p>
+
+                    <span class="member-branch">
+                        feature/contact
+                    </span>
+                </div>
+            </article>
+
+
+            <!-- Abhisek -->
+            <article class="team-card">
+                <div class="member-avatar">
+                    AP
+                </div>
+
+                <div class="member-info">
+                    <h3>Abhisek Patel</h3>
+                    <p class="member-role">Student Developer</p>
+
+                    <span class="member-branch">
+                        feature/cart
+                    </span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+    </main>
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+                Hamro<span>Market</span>
+            </a>
+
+            <p>
+                A local digital marketplace connecting customers
+                with products from local sellers.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Navigate</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Categories</h3>
+
+            <ul>
+                <li><a href="products.html">Electronics</a></li>
+                <li><a href="products.html">Fashion</a></li>
+                <li><a href="products.html">Food</a></li>
+                <li><a href="products.html">Home &amp; Living</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Project</h3>
+
+            <ul>
+                <li><a href="#">GitHub Repository</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+                <li><a href="about.html">Our Team</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 HamroMarket. VCS Summer Class Project.
+        </p>
+
+        <p>
+            Built with HTML, CSS &amp; GitHub
+        </p>
+    </div>
+</footer>
+
+    
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
+
